@@ -87,7 +87,7 @@ const HomePage = (props) => {
               <Select
                 error={breed ? false : true}
                 labelId="demo-simple-select-required-label"
-                id="demo-simple-select-required"
+                id="breed-select"
                 value={breed}
                 label="Breeds *"
                 onChange={handleBreedSelect}
@@ -111,7 +111,7 @@ const HomePage = (props) => {
                 <Select
                   error={subBreed ? false : true}
                   labelId="demo-simple-select-required-label"
-                  id="demo-simple-select-required"
+                  id="subBreed-select"
                   value={subBreed}
                   label="Sub Breeds *"
                   onChange={handleSubBreedSelect}
@@ -130,7 +130,7 @@ const HomePage = (props) => {
           <Grid style={{ margin: "8px auto" }} item xs={gridSize}>
             <TextField
               error={numberOfImages ? false : true}
-              id="outlined-basic"
+              id="numberOfImagesInput"
               label="Number of Images"
               variant="outlined"
               helperText="Please enter number of images"
